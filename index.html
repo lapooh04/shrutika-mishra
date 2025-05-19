@@ -5,55 +5,100 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Shrutika Mishra | Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
   <style>
     body {
       font-family: 'Inter', sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #ffffff;
+      background-color: #f6f3fa;
       color: #1f2937;
       line-height: 1.6;
     }
     .container {
-      max-width: 900px;
+      max-width: 1000px;
       margin: auto;
       padding: 2rem;
     }
-    h1, h2, h3 {
-      color: #111827;
+    header {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+    header img {
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #9b5de5;
     }
     h1 {
       font-size: 2.5rem;
-      margin-bottom: 0.5rem;
+      margin: 0.5rem 0;
     }
     h2 {
-      margin-top: 2rem;
-      border-bottom: 2px solid #e5e7eb;
-      padding-bottom: 0.3rem;
+      margin-top: 2.5rem;
+      border-left: 5px solid #9b5de5;
+      padding-left: 0.5rem;
+      color: #3a0ca3;
+    }
+    .section {
+      margin-bottom: 2rem;
     }
     .contact a, .project a {
-      color: #2563eb;
+      color: #3a0ca3;
       text-decoration: none;
     }
     .contact a:hover, .project a:hover {
       text-decoration: underline;
     }
-    .section {
-      margin-bottom: 2rem;
-    }
     .project {
       margin-bottom: 1.5rem;
       padding: 1rem;
-      border: 1px solid #e5e7eb;
       border-radius: 0.5rem;
-      background-color: #f9fafb;
+      background-color: #eae1f2;
+      display: flex;
+      gap: 1rem;
+      align-items: flex-start;
+    }
+    .project-icon {
+      font-size: 2rem;
+      color: #6a00f4;
+      flex-shrink: 0;
     }
     .project h3 {
-      margin: 0 0 0.5rem 0;
+      margin: 0 0 0.3rem 0;
       font-size: 1.25rem;
     }
-    .project p {
-      margin: 0;
+    .timeline {
+      position: relative;
+      padding-left: 2rem;
+    }
+    .timeline::before {
+      content: "";
+      position: absolute;
+      left: 8px;
+      top: 0;
+      bottom: 0;
+      width: 4px;
+      background: #9b5de5;
+    }
+    .timeline-entry {
+      position: relative;
+      margin-bottom: 2rem;
+    }
+    .timeline-entry::before {
+      content: "";
+      position: absolute;
+      left: -4px;
+      background: #fff;
+      border: 4px solid #9b5de5;
+      border-radius: 50%;
+      width: 16px;
+      height: 16px;
+      top: 5px;
+    }
+    .timeline-entry p {
+      margin-left: 1.5rem;
     }
     ul {
       padding-left: 1.25rem;
@@ -61,69 +106,102 @@
     ul li {
       margin-bottom: 0.5rem;
     }
-    .skills p, .education p {
-      margin-bottom: 1rem;
-    }
+    .glow-heading {
+  color: #8634eb;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.4s ease;
+}
+
+.glow-heading:hover {
+  color: #8634eb;
+  text-shadow: 0 0 5px #8634eb, 0 0 10px #8634eb, 0 0 20px #8634eb;
+}
+
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>Shrutika Mishra</h1>
-    <p>An enthusiastic and driven student passionate about Artificial Intelligence, Data Science, and Human-Centric Innovation.</p>
+    <header>
+      <img src="https://avatars.githubusercontent.com/u/104693541?v=4" alt="Shrutika Mishra">
+      <h1>Hi there! I'm Shrutika Mishra</h1>
+      <p>An enthusiastic and driven student passionate about Artificial Intelligence, Data Science, and Human-Centric Innovation.</p>
+    </header>
 
     <div class="section contact">
-      <h2>Contact</h2>
-      <a href="mailto:shrutika.mishra104@gmail.com">shrutika.mishra104@gmail.com</a><br>
-      <a href="https://github.com/lapooh04" target="_blank">GitHub: lapooh04</a><br>
-      <a href="https://www.linkedin.com/in/shrutika-mishra-253990280/" target="_blank">LinkedIn</a>
+      <h2 class = "glow-heading">Contact</h2>
+      <p><a href="mailto:shrutika.mishra104@gmail.com">shrutika.mishra104@gmail.com</a></p>
+      <p><a href="https://github.com/lapooh04" target="_blank">GitHub: lapooh04</a></p>
+      <p><a href="https://www.linkedin.com/in/shrutika-mishra-253990280/" target="_blank">LinkedIn</a></p>
     </div>
 
     <div class="section education">
-      <h2>Education</h2>
-      <p><strong>B.Tech, Computer Science Engineering (AI & DS)</strong><br>Maharashtra Institute of Technology, Pune — <em>Graduation: 2026</em><br>CGPA: 8.1/10</p>
-      <p><strong>HSC (CBSE)</strong><br>RN Podar International School, Mumbai — 78%</p>
-      <p><strong>SSC (CBSE)</strong><br>Podar International School, Mumbai — 95.2%</p>
+      <h2 class = "glow-heading">Education</h2>
+      <div class="timeline">
+        <div class="timeline-entry">
+          <p><strong>2020</strong> — SSC (CBSE), Podar International School, Mumbai — 95.2%</p>
+        </div>
+        <div class="timeline-entry">
+          <p><strong>2022</strong> — HSC (CBSE), RN Podar International School, Mumbai — 78%</p>
+        </div>
+        <div class="timeline-entry">
+          <p><strong>2026</strong> — B.Tech (CSE - AI & DS), MIT Pune — CGPA: 8.1/10</p>
+        </div>
+      </div>
     </div>
 
     <div class="section">
-      <h2>Projects</h2>
+      <h2 class = "glow-heading">Projects</h2>
       <div class="project">
-        <h3>ParaCursor: Gesture-Controlled Cursor</h3>
-        <p>Engineered an accessible HCI system using Arduino, flex/force sensors, and sensor fusion to convert hand gestures into mouse actions. Applied scikit-learn for gesture classification and used pynput for OS-level control. Mimicked real-time automation for accessibility.</p>
+        <div class="project-icon"><i class="ri-hand-gesture-line"></i></div>
+        <div>
+          <h3>ParaCursor: Gesture-Controlled Cursor</h3>
+          <p>Engineered an HCI system using Arduino, flex/force sensors, sensor fusion, and ML for translating hand gestures to OS-level cursor actions.</p>
+        </div>
       </div>
       <div class="project">
-        <h3>EcoFlare: Wildfire Detection & Forecasting</h3>
-        <p>Developed a full-stack wildfire intelligence system using Spring Boot microservices, Flask APIs, Apache Kafka, and a U-Net-CNN model for fire segmentation from satellite imagery with geolocation-based risk prediction.</p>
+        <div class="project-icon"><i class="ri-fire-line"></i></div>
+        <div>
+          <h3>EcoFlare: Wildfire Detection & Forecasting</h3>
+          <p>Built a full-stack wildfire alert system with Spring Boot, Flask, Kafka, and U-Net CNN for image-based fire segmentation and geospatial risk prediction.</p>
+        </div>
       </div>
       <div class="project">
-        <h3>PillPal: Voice-Controlled Healthcare Assistant</h3>
-        <p>Built a voice-based assistant with Flask, SQLite, and NLP libraries for elderly care. Included medication alerts, SOS functionality, and API extensibility with robust user interaction testing.</p>
+        <div class="project-icon"><i class="ri-mic-line"></i></div>
+        <div>
+          <h3>PillPal: Voice-Controlled Healthcare Assistant</h3>
+          <p>Created an NLP-powered assistant with Flask, SQLite, and Speech libraries for elder care: reminders, SOS alerts, and dashboard features.</p>
+        </div>
       </div>
       <div class="project">
-        <h3>Human Gait Recognition</h3>
-        <p>Ongoing research comparing ML ensembles and CV pipelines for biometric authentication using gait analysis. Focused on feature extraction and non-intrusive recognition techniques.</p>
+        <div class="project-icon"><i class="ri-walk-line"></i></div>
+        <div>
+          <h3>Human Gait Recognition</h3>
+          <p>Ongoing research on ML and CV approaches for biometric identification using gait signatures in video data.</p>
+        </div>
       </div>
     </div>
 
     <div class="section skills">
-      <h2>Skills</h2>
+      <h2 class = "glow-heading">Skills</h2>
       <p><strong>Programming:</strong> C++, Python, Java, SQL, R</p>
-      <p><strong>Domains:</strong> ML, DL, Backend Dev, IoT Systems, Big Data</p>
-      <p><strong>Tools:</strong> Flask, FastAPI, Spring Boot, TensorFlow, PyTorch, OpenCV, Apache Kafka, Hadoop, PowerBI</p>
+      <p><strong>Domains:</strong> ML, DL, Backend Dev, IoT, Big Data</p>
+      <p><strong>Tools:</strong> Flask, FastAPI, Spring Boot, TensorFlow, PyTorch, OpenCV, Kafka, Hadoop, PowerBI</p>
     </div>
 
     <div class="section">
-      <h2>Achievements</h2>
+      <h2 class = "glow-heading">Achievements</h2>
       <ul>
-        <li>3rd Place | IoT Track, ACM Smart Stack Innovators Contest</li>
-        <li>2nd Place | DataQuest Track, HackMIT</li>
-        <li>3rd Place | Women in Entrepreneurship Track, SWE HackMIT</li>
+        <li> 3rd Place | IoT Track, ACM Smart Stack Innovators</li>
+        <li> 2nd Place | DataQuest Track, HackMIT</li>
+        <li> 3rd Place | Women in Entrepreneurship, SWE HackMIT</li>
       </ul>
     </div>
 
     <div class="section">
-      <h2>Leadership</h2>
-      <p><strong>Society of Women Engineers — Content Creation Team</strong><br>Organized events for 100+ members promoting women in STEM, and created STEM-focused content for underrepresented groups.</p>
+      <h2 class = "glow-heading">Leadership</h2>
+      <p><strong>Society of Women Engineers — Content Team</strong><br>Led events for 100+ members promoting women in STEM. Created social outreach content to boost visibility and inclusion.</p>
     </div>
   </div>
 </body>
