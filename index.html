@@ -3,16 +3,17 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Shrutika Mishra | Portfolio</title>
+  <title>Shrutika Mishra</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
   <style>
+
     body {
       font-family: 'Inter', sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f6f3fa;
-      color: #1f2937;
+      background-color: #0d1f5c;
+      color: #94a3d4;
       line-height: 1.6;
     }
     .container {
@@ -32,20 +33,24 @@
       border: 4px solid #9b5de5;
     }
     h1 {
-      font-size: 2.5rem;
+      font-size: 2rem;
       margin: 0.5rem 0;
     }
     h2 {
-      margin-top: 2.5rem;
+      margin-top: 2rem;
       border-left: 5px solid #9b5de5;
       padding-left: 0.5rem;
-      color: #3a0ca3;
+      color: #94a3d4;
+    }
+    h3
+    {
+      color: #0d1f5c;
     }
     .section {
       margin-bottom: 2rem;
     }
     .contact a, .project a {
-      color: #3a0ca3;
+      color: #94a3d4;
       text-decoration: none;
     }
     .contact a:hover, .project a:hover {
@@ -62,7 +67,7 @@
     }
     .project-icon {
       font-size: 2rem;
-      color: #6a00f4;
+      color: #0d1f5c;
       flex-shrink: 0;
     }
     .project h3 {
@@ -107,102 +112,503 @@
       margin-bottom: 0.5rem;
     }
     .glow-heading {
-  color: #8634eb;
-  font-size: 2rem;
+  color: #cca5fa;
+  font-size: 1.6rem;
   text-transform: uppercase;
   letter-spacing: 1px;
   transition: all 0.4s ease;
 }
 
 .glow-heading:hover {
-  color: #8634eb;
-  text-shadow: 0 0 5px #8634eb, 0 0 10px #8634eb, 0 0 20px #8634eb;
+  color: #cca5fa;
+  text-shadow: 0 0 5px #cca5fa, 0 0 10px #cca5fa, 0 0 20px #cca5fa;
 }
+/* globe part style */ 
+.input {
+  width: 200%;
+  max-width: 270px;
+  height: 60px;
+  padding: 12px;
+  font-size: 25px;
+  font-family: "Courier New", monospace;
+  color: #000;
+  background-color: #fff;
+  border: 4px solid #000;
+  border-radius: 0;
+  outline: none;
+  transition: all 0.3s ease;
+  box-shadow: 8px 8px 0 #000;
+}
+
+.input::placeholder {
+  color: #0d1f5c;
+}
+
+.input:hover {
+  transform: translate(-4px, -4px);
+  box-shadow: 12px 12px 0 #000;
+}
+
+.input:focus {
+  background-color: #000;
+  color: #fff;
+  border-color: #ffffff;
+}
+
+.input:focus::placeholder {
+  color: #fff;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.input:focus::after {
+  content: "|";
+  position: absolute;
+  right: 10px;
+  animation: blink 0.7s step-end infinite;
+}
+
+.input:valid {
+  animation: typing 2s steps(30, end);
+}
+.input-container {
+  position: relative;
+  width: 200%;
+  max-width: 300px;
+}
+
+.input {
+  width: 200%;
+  height: 80px;
+  padding: 12px;
+  font-size: 25px;
+  font-family: "Courier New", monospace;
+  color: #0d1f5c;
+  background-color: #fff;
+  border: 4px solid #000;
+  border-radius: 0;
+  outline: none;
+  transition: all 0.3s ease;
+  box-shadow: 8px 8px 0 #000;
+}
+
+.input::placeholder {
+  color: #888;
+}
+
+.input:hover {
+  transform: translate(-4px, -4px);
+  box-shadow: 12px 12px 0 #000;
+}
+
+.input:focus {
+  background-color: #010101;
+  color: #fff;
+  border-color: #d6d9dd;
+}
+
+.input:focus::placeholder {
+  color: #fff;
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px) rotate(-5deg);
+  }
+  50% {
+    transform: translateX(5px) rotate(5deg);
+  }
+  75% {
+    transform: translateX(-5px) rotate(-5deg);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.input:focus {
+  animation: shake 0.5s ease-in-out;
+}
+
+@keyframes glitch {
+  0% {
+    transform: none;
+    opacity: 1;
+  }
+  7% {
+    transform: skew(-0.5deg, -0.9deg);
+    opacity: 0.75;
+  }
+  10% {
+    transform: none;
+    opacity: 1;
+  }
+  27% {
+    transform: none;
+    opacity: 1;
+  }
+  30% {
+    transform: skew(0.8deg, -0.1deg);
+    opacity: 0.75;
+  }
+  35% {
+    transform: none;
+    opacity: 1;
+  }
+  52% {
+    transform: none;
+    opacity: 1;
+  }
+  55% {
+    transform: skew(-1deg, 0.2deg);
+    opacity: 0.75;
+  }
+  50% {
+    transform: none;
+    opacity: 1;
+  }
+  72% {
+    transform: none;
+    opacity: 1;
+  }
+  75% {
+    transform: skew(0.4deg, 1deg);
+    opacity: 0.75;
+  }
+  80% {
+    transform: none;
+    opacity: 1;
+  }
+  100% {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+.input:not(:placeholder-shown) {
+  animation: glitch 1s linear infinite;
+}
+
+.input-container::after {
+  content: "|";
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #000;
+  animation: blink 0.7s step-end infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+.input:focus + .input-container::after {
+  color: #fff;
+}
+
+.input:not(:placeholder-shown) {
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-shadow: 0px 0px 0 #000;
+}
+/**/
+
+/* globe part style*/ 
+.earth-loader {
+  --watercolor: #3344c1;
+  --landcolor: #7cc133;
+  width: 7.5em;
+  height: 7.5em;
+  background-color: var(--watercolor);
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+  box-shadow:
+    inset 0em 0.5em rgb(255, 255, 255, 0.25),
+    inset 0em -0.5em rgb(0, 0, 0, 0.25);
+  border: solid 0.15em white;
+  animation: startround 1s;
+  animation-iteration-count: 1;
+}
+
+.earth p {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 0.25em;
+  font-size: 1.25em;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.earth-loader svg:nth-child(1) {
+  position: absolute;
+  bottom: -2em;
+  width: 7em;
+  height: auto;
+  animation: round1 5s infinite linear 0.75s;
+}
+
+.earth-loader svg:nth-child(2) {
+  position: absolute;
+  top: -3em;
+  width: 7em;
+  height: auto;
+  animation: round1 5s infinite linear;
+}
+.earth-loader svg:nth-child(3) {
+  position: absolute;
+  top: -2.5em;
+  width: 7em;
+  height: auto;
+  animation: round2 5s infinite linear;
+}
+.earth-loader svg:nth-child(4) {
+  position: absolute;
+  bottom: -2.2em;
+  width: 7em;
+  height: auto;
+  animation: round2 5s infinite linear 0.75s;
+}
+
+@keyframes startround {
+  0% {
+    filter: brightness(500%);
+    box-shadow: none;
+  }
+  75% {
+    filter: brightness(500%);
+    box-shadow: none;
+  }
+  100% {
+    filter: brightness(100%);
+    box-shadow:
+      inset 0em 0.5em rgb(255, 255, 255, 0.25),
+      inset 0em -0.5em rgb(0, 0, 0, 0.25);
+  }
+}
+
+@keyframes round1 {
+  0% {
+    left: -2em;
+    opacity: 100%;
+    transform: skewX(0deg) rotate(0deg);
+  }
+  30% {
+    left: -6em;
+    opacity: 100%;
+    transform: skewX(-25deg) rotate(25deg);
+  }
+  31% {
+    left: -6em;
+    opacity: 0%;
+    transform: skewX(-25deg) rotate(25deg);
+  }
+  35% {
+    left: 7em;
+    opacity: 0%;
+    transform: skewX(25deg) rotate(-25deg);
+  }
+  45% {
+    left: 7em;
+    opacity: 100%;
+    transform: skewX(25deg) rotate(-25deg);
+  }
+  100% {
+    left: -2em;
+    opacity: 100%;
+    transform: skewX(0deg) rotate(0deg);
+  }
+}
+
+@keyframes round2 {
+  0% {
+    left: 5em;
+    opacity: 100%;
+    transform: skewX(0deg) rotate(0deg);
+  }
+  75% {
+    left: -7em;
+    opacity: 100%;
+    transform: skewX(-25deg) rotate(25deg);
+  }
+  76% {
+    left: -7em;
+    opacity: 0%;
+    transform: skewX(-25deg) rotate(25deg);
+  }
+  77% {
+    left: 8em;
+    opacity: 0%;
+    transform: skewX(25deg) rotate(-25deg);
+  }
+  80% {
+    left: 8em;
+    opacity: 100%;
+    transform: skewX(25deg) rotate(-25deg);
+  }
+  100% {
+    left: 5em;
+    opacity: 100%;
+    transform: skewX(0deg) rotate(0deg);
+  }
+}
+/* */
 
   </style>
 </head>
 <body>
   <div class="container">
     <header>
-      <img src="https://avatars.githubusercontent.com/u/104693541?v=4" alt="Shrutika Mishra">
-      <h1>Hi there! I'm Shrutika Mishra</h1>
-      <p>An enthusiastic and driven student passionate about Artificial Intelligence, Data Science, and Human-Centric Innovation.</p>
+      <!-- name tag --> 
+<div class="input-container">
+  <input
+    class="input"
+    name="text"
+    type="text"
+    placeholder="Hey! I'm Shrutika"
+  />
+</div>
     </header>
-
-    <div class="section contact">
-      <h2 class = "glow-heading">Contact</h2>
-      <p><a href="mailto:shrutika.mishra104@gmail.com">shrutika.mishra104@gmail.com</a></p>
-      <p><a href="https://github.com/lapooh04" target="_blank">GitHub: lapooh04</a></p>
-      <p><a href="https://www.linkedin.com/in/shrutika-mishra-253990280/" target="_blank">LinkedIn</a></p>
-    </div>
-
     <div class="section education">
-      <h2 class = "glow-heading">Education</h2>
+      <h2 class = "glow-heading">My (not so big) Journey So Far...</h2>
       <div class="timeline">
-        <div class="timeline-entry">
-          <p><strong>2020</strong> — SSC (CBSE), Podar International School, Mumbai — 95.2%</p>
-        </div>
-        <div class="timeline-entry">
-          <p><strong>2022</strong> — HSC (CBSE), RN Podar International School, Mumbai — 78%</p>
-        </div>
         <div class="timeline-entry">
           <p><strong>2026</strong> — B.Tech (CSE - AI & DS), MIT Pune — CGPA: 8.1/10</p>
         </div>
+        <div class="timeline-entry">
+          <p><strong>2022</strong> — HSC (CBSE), RN Podar International School, Mumbai</p>
+        </div>
+        <div class="timeline-entry">
+          <p><strong>2020</strong> — SSC (CBSE), Podar International School, Mumbai</p>
+        </div>
       </div>
     </div>
-
+     <div class="section skills">
+      <h2 class = "glow-heading">Technical Stuff</h2>
+      <p><strong>Languages I've worked in:</strong> C++, Python, Java, SQL, R</p>
+      <p><strong>Domains I'm interested in:</strong> ML, DL, Backend Dev, IoT, Big Data, Data Analysis</p>
+      <p><strong>Tools I've explored:</strong> Flask, FastAPI, Spring Boot, TensorFlow, PyTorch, OpenCV, Kafka, Hadoop, PowerBI</p>
+    </div>
     <div class="section">
-      <h2 class = "glow-heading">Projects</h2>
+      <h2 class = "glow-heading">Fun Projects I've Built</h2>
       <div class="project">
-        <div class="project-icon"><i class="ri-hand-gesture-line"></i></div>
+        
         <div>
           <h3>ParaCursor: Gesture-Controlled Cursor</h3>
+          <p><a href="https://github.com/lapooh04/ParaCursor" target="_blank">check it out!</a></p>
           <p>Engineered an HCI system using Arduino, flex/force sensors, sensor fusion, and ML for translating hand gestures to OS-level cursor actions.</p>
         </div>
       </div>
       <div class="project">
-        <div class="project-icon"><i class="ri-fire-line"></i></div>
+        
         <div>
           <h3>EcoFlare: Wildfire Detection & Forecasting</h3>
+          <p><a href="https://github.com/lapooh04/EcoFlare-Real-time-wildfire-tracking-and-spread-prediction" target="_blank">check it out!</a></p>
           <p>Built a full-stack wildfire alert system with Spring Boot, Flask, Kafka, and U-Net CNN for image-based fire segmentation and geospatial risk prediction.</p>
         </div>
       </div>
       <div class="project">
-        <div class="project-icon"><i class="ri-mic-line"></i></div>
+        
         <div>
           <h3>PillPal: Voice-Controlled Healthcare Assistant</h3>
+          <p><a href="https://github.com/Shirsha5/nlp-aai" target="_blank">check it out!</a></p>
           <p>Created an NLP-powered assistant with Flask, SQLite, and Speech libraries for elder care: reminders, SOS alerts, and dashboard features.</p>
         </div>
       </div>
       <div class="project">
-        <div class="project-icon"><i class="ri-walk-line"></i></div>
+       
         <div>
           <h3>Human Gait Recognition</h3>
           <p>Ongoing research on ML and CV approaches for biometric identification using gait signatures in video data.</p>
         </div>
       </div>
+
+      <div class="project">
+       
+        <div>
+          <h3>FlameLeaf: Plant Flammabiltiy Analysis</h3>
+           <p><a href="https://github.com/lapooh04/InsideTalk-Chatbot" target="_blank">check it out!</a></p>
+          <p>Worked on a dual-model machine learning system designed to predict the fire risk of plants based on species recognition from leaf images.</p>
+        </div>
+      </div>
+      <div class="project">
+       
+        <div>
+          <h3>InsideTalk Chatbot</h3>
+          <p><a href="https://github.com/lapooh04/InsideTalk-Chatbot" target="_blank">check it out!</a></p>
+          <p>InsideTalk is a unique chatbot application inspired by the concept of Inside Out, designed to help users navigate their emotions through empathetic dialogue. By recognizing and responding to the user's chosen emotions, the chatbot fosters a deeper understanding of feelings and encourages healthy emotional expression.</p>
+        </div>
+      </div>
     </div>
 
-    <div class="section skills">
-      <h2 class = "glow-heading">Skills</h2>
-      <p><strong>Programming:</strong> C++, Python, Java, SQL, R</p>
-      <p><strong>Domains:</strong> ML, DL, Backend Dev, IoT, Big Data</p>
-      <p><strong>Tools:</strong> Flask, FastAPI, Spring Boot, TensorFlow, PyTorch, OpenCV, Kafka, Hadoop, PowerBI</p>
+   
+     <div class="section contact">
+
+      <h2 class = "glow-heading">Connect with me!</h2>
+      <p><a href="mailto:shrutika.mishra104@gmail.com">shrutika.mishra104@gmail.com</a></p>
+      <p><a href="https://github.com/lapooh04" target="_blank">GitHub: lapooh04</a></p>
+      <p><a href="https://www.linkedin.com/in/shrutika-mishra-253990280/" target="_blank">LinkedIn</a></p>
+      <p><a href="https://drive.google.com/file/d/1wuDTZA9iElOsX_mz_U-qRBoQpMbH2aam/view?usp=sharing" target="_blank">Resume</a></p>
+
+      <h2 class = "glow-heading">Thanks for stopping by!</h2>
+      <p>Currently open to exciting internship or full-time opportunities where I can learn, contribute meaningfully, and grow alongside great teams!</p> 
     </div>
 
-    <div class="section">
-      <h2 class = "glow-heading">Achievements</h2>
-      <ul>
-        <li> 3rd Place | IoT Track, ACM Smart Stack Innovators</li>
-        <li> 2nd Place | DataQuest Track, HackMIT</li>
-        <li> 3rd Place | Women in Entrepreneurship, SWE HackMIT</li>
-      </ul>
-    </div>
-
-    <div class="section">
-      <h2 class = "glow-heading">Leadership</h2>
-      <p><strong>Society of Women Engineers — Content Team</strong><br>Led events for 100+ members promoting women in STEM. Created social outreach content to boost visibility and inclusion.</p>
-    </div>
+    <!--globe part --> 
+<div class="earth">
+  <div class="earth-loader">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+      <path
+        transform="translate(100 100)"
+        d="M29.4,-17.4C33.1,1.8,27.6,16.1,11.5,31.6C-4.7,47,-31.5,63.6,-43,56C-54.5,48.4,-50.7,16.6,-41,-10.9C-31.3,-38.4,-15.6,-61.5,-1.4,-61C12.8,-60.5,25.7,-36.5,29.4,-17.4Z"
+        fill="#7CC133"
+      ></path>
+    </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+      <path
+        transform="translate(100 100)"
+        d="M31.7,-55.8C40.3,-50,45.9,-39.9,49.7,-29.8C53.5,-19.8,55.5,-9.9,53.1,-1.4C50.6,7.1,43.6,14.1,41.8,27.6C40.1,41.1,43.4,61.1,37.3,67C31.2,72.9,15.6,64.8,1.5,62.2C-12.5,59.5,-25,62.3,-31.8,56.7C-38.5,51.1,-39.4,37.2,-49.3,26.3C-59.1,15.5,-78,7.7,-77.6,0.2C-77.2,-7.2,-57.4,-14.5,-49.3,-28.4C-41.2,-42.4,-44.7,-63,-38.5,-70.1C-32.2,-77.2,-16.1,-70.8,-2.3,-66.9C11.6,-63,23.1,-61.5,31.7,-55.8Z"
+        fill="#7CC133"
+      ></path>
+    </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+      <path
+        transform="translate(100 100)"
+        d="M30.6,-49.2C42.5,-46.1,57.1,-43.7,67.6,-35.7C78.1,-27.6,84.6,-13.8,80.3,-2.4C76.1,8.9,61.2,17.8,52.5,29.1C43.8,40.3,41.4,53.9,33.7,64C26,74.1,13,80.6,2.2,76.9C-8.6,73.1,-17.3,59,-30.6,52.1C-43.9,45.3,-61.9,45.7,-74.1,38.2C-86.4,30.7,-92.9,15.4,-88.6,2.5C-84.4,-10.5,-69.4,-20.9,-60.7,-34.6C-52.1,-48.3,-49.8,-65.3,-40.7,-70C-31.6,-74.8,-15.8,-67.4,-3.2,-61.8C9.3,-56.1,18.6,-52.3,30.6,-49.2Z"
+        fill="#7CC133"
+      ></path>
+    </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+      <path
+        transform="translate(100 100)"
+        d="M39.4,-66C48.6,-62.9,51.9,-47.4,52.9,-34.3C53.8,-21.3,52.4,-10.6,54.4,1.1C56.3,12.9,61.7,25.8,57.5,33.2C53.2,40.5,39.3,42.3,28.2,46C17,49.6,8.5,55.1,1.3,52.8C-5.9,50.5,-11.7,40.5,-23.6,37.2C-35.4,34,-53.3,37.5,-62,32.4C-70.7,27.4,-70.4,13.7,-72.4,-1.1C-74.3,-15.9,-78.6,-31.9,-73.3,-43C-68.1,-54.2,-53.3,-60.5,-39.5,-60.9C-25.7,-61.4,-12.9,-56,1.1,-58C15.1,-59.9,30.2,-69.2,39.4,-66Z"
+        fill="#7CC133"
+      ></path>
+    </svg>
   </div>
+</div>
+<!-- -->
+
+      </div>
 </body>
 </html>
